@@ -12,4 +12,6 @@ gem 'unicorn'
 
 gem 'pg'
 
+gem 'bacon'
+
 gem 'foreman'
