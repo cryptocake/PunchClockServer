@@ -126,13 +126,6 @@ post '/status/update' do
         end
 
         if recipient_ids.count > 0
-          ZeroPush.notify({
-            device_tokens: recipient_ids,
-            alert: "#{person.name.capitalize!} is #{params[:status]}",
-            sound: "status.caf",
-            badge: "",
-            info: ""
-          })
         end
       end
     end
@@ -178,13 +171,6 @@ post '/message/in' do
   end
 
   if recipient_ids.count > 0
-    ZeroPush.notify({
-      device_tokens: recipient_ids,
-      alert: "#{sender.name.capitalize!}: #{params[:message]}",
-      sound: "message.caf",
-      badge: "",
-      info: ""
-    })
   end
 
   {"result" => STATUS_OK}.to_json

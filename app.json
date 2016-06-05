@@ -9,7 +9,7 @@
     "iBeacon"
   ],
   "website": "https://www.panic.com/blog/punchclock-fun-with-ibeacons/",
-  "repository": "https://github.com/panicinc/PunchClockServer",
+  "repository": "https://github.com/ClementPadovani/PunchClockServer",
   "env": {
     "AUTH_USER": {
       "description": "An HTTP authentication username to secure this instance."
